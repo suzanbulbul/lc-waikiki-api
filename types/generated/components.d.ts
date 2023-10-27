@@ -10,7 +10,7 @@ export interface ProductsfeatureColor extends Schema.Component {
     image: Attribute.Media & Attribute.Required;
     color: Attribute.String;
     price: Attribute.String;
-    enable: Attribute.Boolean & Attribute.Required;
+    enable: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
