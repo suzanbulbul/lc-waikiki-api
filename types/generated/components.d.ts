@@ -8,8 +8,9 @@ export interface ProductsfeatureColor extends Schema.Component {
   };
   attributes: {
     image: Attribute.Media & Attribute.Required;
-    price: Attribute.RichText;
     color: Attribute.String;
+    price: Attribute.String;
+    enable: Attribute.Boolean & Attribute.Required;
   };
 }
 

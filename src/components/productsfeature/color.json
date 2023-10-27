@@ -17,11 +17,15 @@
         "audios"
       ]
     },
-    "price": {
-      "type": "richtext"
-    },
     "color": {
       "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "enable": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
