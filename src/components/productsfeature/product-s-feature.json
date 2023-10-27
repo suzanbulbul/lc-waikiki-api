@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_productsfeature_product_s_features",
+  "info": {
+    "displayName": "feature",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "productFeature": {
+      "type": "text"
+    },
+    "yearSeason": {
+      "type": "string"
+    },
+    "fabricCare": {
+      "type": "string"
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.size"
+    },
+    "productCode": {
+      "type": "string"
+    }
+  }
+}
