@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_productsfeature_attributes",
+  "info": {
+    "displayName": "attributes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "brandName": {
+      "type": "string"
+    },
+    "brandDesc": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productsfeature.product-s-feature"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tshirt",
+  "info": {
+    "singularName": "tshirts",
+    "pluralName": "tshirt",
+    "displayName": "tshirts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attribute": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productsfeature.attributes"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.color"
+    }
+  }
+}

@@ -27,6 +27,11 @@
       "type": "boolean",
       "required": false,
       "default": false
+    },
+    "size": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.size"
     }
   }
 }

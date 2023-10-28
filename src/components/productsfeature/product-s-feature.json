@@ -16,11 +16,6 @@
     "fabricCare": {
       "type": "string"
     },
-    "size": {
-      "type": "component",
-      "repeatable": true,
-      "component": "productsfeature.size"
-    },
     "productCode": {
       "type": "string"
     }
