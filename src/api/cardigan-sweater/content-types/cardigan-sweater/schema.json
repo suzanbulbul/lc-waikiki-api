@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cardigan_sweaters",
+  "info": {
+    "singularName": "cardigan-sweater",
+    "pluralName": "cardigan-sweaters",
+    "displayName": "cardiganSweater"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attribute": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productsfeature.attributes"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.color"
+    }
+  }
+}

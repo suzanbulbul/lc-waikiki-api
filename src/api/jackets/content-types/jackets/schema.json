@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jacket",
+  "info": {
+    "singularName": "jackets",
+    "pluralName": "jacket",
+    "displayName": "Jackets"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attribute": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productsfeature.attributes"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.color"
+    }
+  }
+}

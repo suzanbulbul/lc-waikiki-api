@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skirt",
+  "info": {
+    "singularName": "skirts",
+    "pluralName": "skirt",
+    "displayName": "Skirts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attribute": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productsfeature.attributes"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productsfeature.color"
+    }
+  }
+}

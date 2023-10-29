@@ -677,6 +677,224 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlousesBlouses extends Schema.CollectionType {
+  collectionName: 'blouse';
+  info: {
+    singularName: 'blouses';
+    pluralName: 'blouse';
+    displayName: 'Blouses';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blouses.blouses',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blouses.blouses',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCardiganSweaterCardiganSweater
+  extends Schema.CollectionType {
+  collectionName: 'cardigan_sweaters';
+  info: {
+    singularName: 'cardigan-sweater';
+    pluralName: 'cardigan-sweaters';
+    displayName: 'cardiganSweater';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::cardigan-sweater.cardigan-sweater',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::cardigan-sweater.cardigan-sweater',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCoatsCoatsCoatsCoats extends Schema.CollectionType {
+  collectionName: 'coat_coat';
+  info: {
+    singularName: 'coats-coats';
+    pluralName: 'coat-coat';
+    displayName: 'coatsCoats';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::coats-coats.coats-coats',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::coats-coats.coats-coats',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDressesDresses extends Schema.CollectionType {
+  collectionName: 'dress';
+  info: {
+    singularName: 'dresses';
+    pluralName: 'dress';
+    displayName: 'Dresses';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::dresses.dresses',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::dresses.dresses',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiJacketsJackets extends Schema.CollectionType {
+  collectionName: 'jacket';
+  info: {
+    singularName: 'jackets';
+    pluralName: 'jacket';
+    displayName: 'Jackets';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::jackets.jackets',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::jackets.jackets',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiJumpersJumpers extends Schema.CollectionType {
+  collectionName: 'jumper';
+  info: {
+    singularName: 'jumpers';
+    pluralName: 'jumper';
+    displayName: 'Jumpers';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::jumpers.jumpers',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::jumpers.jumpers',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLeggingsLeggings extends Schema.CollectionType {
+  collectionName: 'legging';
+  info: {
+    singularName: 'leggings';
+    pluralName: 'legging';
+    displayName: 'Leggings';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::leggings.leggings',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::leggings.leggings',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPantsPants extends Schema.CollectionType {
   collectionName: 'pant';
   info: {
@@ -743,6 +961,99 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
 }
 
+export interface ApiShirtsShirts extends Schema.CollectionType {
+  collectionName: 'shirt';
+  info: {
+    singularName: 'shirts';
+    pluralName: 'shirt';
+    displayName: 'Shirts';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::shirts.shirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::shirts.shirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSkirtsSkirts extends Schema.CollectionType {
+  collectionName: 'skirt';
+  info: {
+    singularName: 'skirts';
+    pluralName: 'skirt';
+    displayName: 'Skirts';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::skirts.skirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::skirts.skirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSweatshirtsSweatshirts extends Schema.CollectionType {
+  collectionName: 'sweatshirt';
+  info: {
+    singularName: 'sweatshirts';
+    pluralName: 'sweatshirt';
+    displayName: 'sweatshirts';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    attribute: Attribute.Component<'productsfeature.attributes'>;
+    color: Attribute.Component<'productsfeature.color', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sweatshirts.sweatshirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sweatshirts.sweatshirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTshirtsTshirts extends Schema.CollectionType {
   collectionName: 'tshirt';
   info: {
@@ -791,8 +1102,18 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::blouses.blouses': ApiBlousesBlouses;
+      'api::cardigan-sweater.cardigan-sweater': ApiCardiganSweaterCardiganSweater;
+      'api::coats-coats.coats-coats': ApiCoatsCoatsCoatsCoats;
+      'api::dresses.dresses': ApiDressesDresses;
+      'api::jackets.jackets': ApiJacketsJackets;
+      'api::jumpers.jumpers': ApiJumpersJumpers;
+      'api::leggings.leggings': ApiLeggingsLeggings;
       'api::pants.pants': ApiPantsPants;
       'api::product.product': ApiProductProduct;
+      'api::shirts.shirts': ApiShirtsShirts;
+      'api::skirts.skirts': ApiSkirtsSkirts;
+      'api::sweatshirts.sweatshirts': ApiSweatshirtsSweatshirts;
       'api::tshirts.tshirts': ApiTshirtsTshirts;
     }
   }
