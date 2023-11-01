@@ -14,7 +14,7 @@
   "attributes": {
     "benefitsArea": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "utils.img"
     },
     "mobileApp": {

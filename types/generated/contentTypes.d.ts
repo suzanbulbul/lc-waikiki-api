@@ -1024,7 +1024,7 @@ export interface ApiFooterFooter extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    benefitsArea: Attribute.Component<'utils.img', true>;
+    benefitsArea: Attribute.Component<'utils.img'>;
     mobileApp: Attribute.Component<'utils.img-url', true>;
     logo: Attribute.Media;
     telNumber: Attribute.Component<'utils.icon-text-url'>;
