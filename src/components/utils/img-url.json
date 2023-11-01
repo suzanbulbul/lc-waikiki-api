@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_utils_img_urls",
+  "info": {
+    "displayName": "img-url"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

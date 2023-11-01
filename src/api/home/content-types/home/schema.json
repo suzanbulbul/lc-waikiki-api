@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homepage",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "marketplace1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.img-url"
+    },
+    "marketplace2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.img-url"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.img-url"
+    }
+  }
+}

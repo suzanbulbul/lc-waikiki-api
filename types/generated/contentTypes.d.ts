@@ -1012,6 +1012,31 @@ export interface ApiDressesDresses extends Schema.CollectionType {
   };
 }
 
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homepage';
+  info: {
+    singularName: 'home';
+    pluralName: 'homepage';
+    displayName: 'home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    marketplace1: Attribute.Component<'utils.img-url', true>;
+    marketplace2: Attribute.Component<'utils.img-url', true>;
+    banner: Attribute.Component<'utils.img-url', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiJacketsJackets extends Schema.CollectionType {
   collectionName: 'jacket';
   info: {
@@ -1320,6 +1345,7 @@ declare module '@strapi/types' {
       'api::cardigan-sweater.cardigan-sweater': ApiCardiganSweaterCardiganSweater;
       'api::coats-coats.coats-coats': ApiCoatsCoatsCoatsCoats;
       'api::dresses.dresses': ApiDressesDresses;
+      'api::home.home': ApiHomeHome;
       'api::jackets.jackets': ApiJacketsJackets;
       'api::jumpers.jumpers': ApiJumpersJumpers;
       'api::leggings.leggings': ApiLeggingsLeggings;

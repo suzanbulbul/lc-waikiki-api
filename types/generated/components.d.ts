@@ -55,6 +55,17 @@ export interface ProductsfeatureSize extends Schema.Component {
   };
 }
 
+export interface UtilsImgUrl extends Schema.Component {
+  collectionName: 'components_utils_img_urls';
+  info: {
+    displayName: 'img-url';
+  };
+  attributes: {
+    img: Attribute.Media;
+    url: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -62,6 +73,7 @@ declare module '@strapi/types' {
       'productsfeature.color': ProductsfeatureColor;
       'productsfeature.product-s-feature': ProductsfeatureProductSFeature;
       'productsfeature.size': ProductsfeatureSize;
+      'utils.img-url': UtilsImgUrl;
     }
   }
 }
