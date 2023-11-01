@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "benefitsArea": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.img"
+    },
+    "mobileApp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.img-url"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "telNumber": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.icon-text-url"
+    },
+    "disabilityDesc": {
+      "type": "string"
+    },
+    "disability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.icon-text-url"
+    }
+  }
+}

@@ -1012,6 +1012,42 @@ export interface ApiDressesDresses extends Schema.CollectionType {
   };
 }
 
+export interface ApiFooterFooter extends Schema.SingleType {
+  collectionName: 'footers';
+  info: {
+    singularName: 'footer';
+    pluralName: 'footers';
+    displayName: 'footer';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    benefitsArea: Attribute.Component<'utils.img', true>;
+    mobileApp: Attribute.Component<'utils.img-url', true>;
+    logo: Attribute.Media;
+    telNumber: Attribute.Component<'utils.icon-text-url'>;
+    disabilityDesc: Attribute.String;
+    disability: Attribute.Component<'utils.icon-text-url'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Schema.SingleType {
   collectionName: 'homepage';
   info: {
@@ -1345,6 +1381,7 @@ declare module '@strapi/types' {
       'api::cardigan-sweater.cardigan-sweater': ApiCardiganSweaterCardiganSweater;
       'api::coats-coats.coats-coats': ApiCoatsCoatsCoatsCoats;
       'api::dresses.dresses': ApiDressesDresses;
+      'api::footer.footer': ApiFooterFooter;
       'api::home.home': ApiHomeHome;
       'api::jackets.jackets': ApiJacketsJackets;
       'api::jumpers.jumpers': ApiJumpersJumpers;

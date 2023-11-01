@@ -55,6 +55,18 @@ export interface ProductsfeatureSize extends Schema.Component {
   };
 }
 
+export interface UtilsIconTextUrl extends Schema.Component {
+  collectionName: 'components_utils_icon_text_urls';
+  info: {
+    displayName: 'icon-text-url';
+  };
+  attributes: {
+    text: Attribute.String;
+    icon: Attribute.String;
+    url: Attribute.String;
+  };
+}
+
 export interface UtilsImgUrl extends Schema.Component {
   collectionName: 'components_utils_img_urls';
   info: {
@@ -66,6 +78,16 @@ export interface UtilsImgUrl extends Schema.Component {
   };
 }
 
+export interface UtilsImg extends Schema.Component {
+  collectionName: 'components_utils_imgs';
+  info: {
+    displayName: 'img';
+  };
+  attributes: {
+    img: Attribute.Media;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -73,7 +95,9 @@ declare module '@strapi/types' {
       'productsfeature.color': ProductsfeatureColor;
       'productsfeature.product-s-feature': ProductsfeatureProductSFeature;
       'productsfeature.size': ProductsfeatureSize;
+      'utils.icon-text-url': UtilsIconTextUrl;
       'utils.img-url': UtilsImgUrl;
+      'utils.img': UtilsImg;
     }
   }
 }
