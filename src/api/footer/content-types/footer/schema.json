@@ -49,20 +49,21 @@
     "socialmediaTitle": {
       "type": "string"
     },
-    "socialmedia": {
-      "type": "component",
-      "repeatable": true,
-      "component": "utils.icon-text-url"
-    },
     "socialmediaImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "socialmedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.icon-url"
     }
   }
 }

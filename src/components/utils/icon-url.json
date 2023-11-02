@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_utils_icon_urls",
+  "info": {
+    "displayName": "icon-url"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
