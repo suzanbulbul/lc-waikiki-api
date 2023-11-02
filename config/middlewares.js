@@ -12,6 +12,15 @@ module.exports = [
           upgradeInsecureRequests: null,
         },
       },
+      settings: {
+        contentTypes: {
+          plugins: {
+            upload: {
+              enabled: true,
+            },
+          },
+        },
+      },
     },
   },
   'strapi::cors',
