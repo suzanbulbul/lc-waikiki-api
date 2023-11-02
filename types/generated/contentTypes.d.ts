@@ -1030,6 +1030,9 @@ export interface ApiFooterFooter extends Schema.SingleType {
     telNumber: Attribute.Component<'utils.icon-text-url'>;
     disabilityDesc: Attribute.String;
     disability: Attribute.Component<'utils.icon-text-url'>;
+    socialmediaTitle: Attribute.String;
+    socialmedia: Attribute.Component<'utils.icon-text-url', true>;
+    socialmediaImg: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

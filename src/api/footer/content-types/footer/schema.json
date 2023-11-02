@@ -45,6 +45,24 @@
       "type": "component",
       "repeatable": false,
       "component": "utils.icon-text-url"
+    },
+    "socialmediaTitle": {
+      "type": "string"
+    },
+    "socialmedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.icon-text-url"
+    },
+    "socialmediaImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
