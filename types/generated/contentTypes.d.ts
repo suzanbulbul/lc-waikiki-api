@@ -1217,6 +1217,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     color: Attribute.Component<'productsfeature.color', true>;
     feature: Attribute.Component<'productsfeature.product-s-feature'>;
     desc: Attribute.Text;
+    jsonData: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
