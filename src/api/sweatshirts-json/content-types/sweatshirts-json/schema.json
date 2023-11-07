@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "sweatshirts_jsons",
+  "info": {
+    "singularName": "sweatshirts-json",
+    "pluralName": "sweatshirts-jsons",
+    "displayName": "SweatshirtsJson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jsonData": {
+      "type": "json"
+    }
+  }
+}

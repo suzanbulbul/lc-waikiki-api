@@ -918,6 +918,36 @@ export interface ApiBlousesBlouses extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlousesJsonBlousesJson extends Schema.SingleType {
+  collectionName: 'blouses_jsons';
+  info: {
+    singularName: 'blouses-json';
+    pluralName: 'blouses-jsons';
+    displayName: 'BlousesJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blouses-json.blouses-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blouses-json.blouses-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCardiganSweaterCardiganSweater
   extends Schema.CollectionType {
   collectionName: 'cardigan_sweaters';
@@ -943,6 +973,37 @@ export interface ApiCardiganSweaterCardiganSweater
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::cardigan-sweater.cardigan-sweater',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCardiganSweaterJsonCardiganSweaterJson
+  extends Schema.SingleType {
+  collectionName: 'cardigan_sweater_jsons';
+  info: {
+    singularName: 'cardigan-sweater-json';
+    pluralName: 'cardigan-sweater-jsons';
+    displayName: 'CardiganSweaterJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::cardigan-sweater-json.cardigan-sweater-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::cardigan-sweater-json.cardigan-sweater-json',
       'oneToOne',
       'admin::user'
     > &
@@ -1201,6 +1262,36 @@ export interface ApiPantsPants extends Schema.CollectionType {
   };
 }
 
+export interface ApiPantsJsonPantsJson extends Schema.SingleType {
+  collectionName: 'pants_jsons';
+  info: {
+    singularName: 'pants-json';
+    pluralName: 'pants-jsons';
+    displayName: 'pantsJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pants-json.pants-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pants-json.pants-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Schema.CollectionType {
   collectionName: 'products';
   info: {
@@ -1298,6 +1389,36 @@ export interface ApiSkirtsSkirts extends Schema.CollectionType {
   };
 }
 
+export interface ApiSkirtsJsonSkirtsJson extends Schema.SingleType {
+  collectionName: 'skirts_jsons';
+  info: {
+    singularName: 'skirts-json';
+    pluralName: 'skirts-jsons';
+    displayName: 'SkirtsJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::skirts-json.skirts-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::skirts-json.skirts-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSweatshirtsSweatshirts extends Schema.CollectionType {
   collectionName: 'sweatshirt';
   info: {
@@ -1322,6 +1443,36 @@ export interface ApiSweatshirtsSweatshirts extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::sweatshirts.sweatshirts',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSweatshirtsJsonSweatshirtsJson extends Schema.SingleType {
+  collectionName: 'sweatshirts_jsons';
+  info: {
+    singularName: 'sweatshirts-json';
+    pluralName: 'sweatshirts-jsons';
+    displayName: 'SweatshirtsJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sweatshirts-json.sweatshirts-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sweatshirts-json.sweatshirts-json',
       'oneToOne',
       'admin::user'
     > &
@@ -1361,6 +1512,36 @@ export interface ApiTshirtsTshirts extends Schema.CollectionType {
   };
 }
 
+export interface ApiTshirtsJsonTshirtsJson extends Schema.SingleType {
+  collectionName: 'tshirts_jsons';
+  info: {
+    singularName: 'tshirts-json';
+    pluralName: 'tshirts-jsons';
+    displayName: 'TshirtsJson';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    jsonData: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::tshirts-json.tshirts-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::tshirts-json.tshirts-json',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1382,7 +1563,9 @@ declare module '@strapi/types' {
       'plugin::navigation.navigation-item': PluginNavigationNavigationItem;
       'plugin::navigation.navigations-items-related': PluginNavigationNavigationsItemsRelated;
       'api::blouses.blouses': ApiBlousesBlouses;
+      'api::blouses-json.blouses-json': ApiBlousesJsonBlousesJson;
       'api::cardigan-sweater.cardigan-sweater': ApiCardiganSweaterCardiganSweater;
+      'api::cardigan-sweater-json.cardigan-sweater-json': ApiCardiganSweaterJsonCardiganSweaterJson;
       'api::coats-coats.coats-coats': ApiCoatsCoatsCoatsCoats;
       'api::dresses.dresses': ApiDressesDresses;
       'api::footer.footer': ApiFooterFooter;
@@ -1391,11 +1574,15 @@ declare module '@strapi/types' {
       'api::jumpers.jumpers': ApiJumpersJumpers;
       'api::leggings.leggings': ApiLeggingsLeggings;
       'api::pants.pants': ApiPantsPants;
+      'api::pants-json.pants-json': ApiPantsJsonPantsJson;
       'api::product.product': ApiProductProduct;
       'api::shirts.shirts': ApiShirtsShirts;
       'api::skirts.skirts': ApiSkirtsSkirts;
+      'api::skirts-json.skirts-json': ApiSkirtsJsonSkirtsJson;
       'api::sweatshirts.sweatshirts': ApiSweatshirtsSweatshirts;
+      'api::sweatshirts-json.sweatshirts-json': ApiSweatshirtsJsonSweatshirtsJson;
       'api::tshirts.tshirts': ApiTshirtsTshirts;
+      'api::tshirts-json.tshirts-json': ApiTshirtsJsonTshirtsJson;
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "skirts_jsons",
+  "info": {
+    "singularName": "skirts-json",
+    "pluralName": "skirts-jsons",
+    "displayName": "SkirtsJson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jsonData": {
+      "type": "json"
+    }
+  }
+}

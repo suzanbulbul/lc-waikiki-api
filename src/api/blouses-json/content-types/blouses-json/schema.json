@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "blouses_jsons",
+  "info": {
+    "singularName": "blouses-json",
+    "pluralName": "blouses-jsons",
+    "displayName": "BlousesJson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jsonData": {
+      "type": "json"
+    }
+  }
+}
