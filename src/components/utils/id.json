@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_utils_ids",
+  "info": {
+    "displayName": "id"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "decimal"
+    }
+  }
+}

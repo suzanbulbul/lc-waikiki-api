@@ -1364,6 +1364,7 @@ export interface ApiSkirtsSkirts extends Schema.CollectionType {
     singularName: 'skirts';
     pluralName: 'skirt';
     displayName: 'Skirts';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1371,6 +1372,7 @@ export interface ApiSkirtsSkirts extends Schema.CollectionType {
   attributes: {
     attribute: Attribute.Component<'productsfeature.attributes'>;
     color: Attribute.Component<'productsfeature.color', true>;
+    key: Attribute.UID & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

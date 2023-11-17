@@ -78,6 +78,16 @@ export interface UtilsIconUrl extends Schema.Component {
   };
 }
 
+export interface UtilsId extends Schema.Component {
+  collectionName: 'components_utils_ids';
+  info: {
+    displayName: 'id';
+  };
+  attributes: {
+    key: Attribute.Decimal;
+  };
+}
+
 export interface UtilsImgUrl extends Schema.Component {
   collectionName: 'components_utils_img_urls';
   info: {
@@ -108,6 +118,7 @@ declare module '@strapi/types' {
       'productsfeature.size': ProductsfeatureSize;
       'utils.icon-text-url': UtilsIconTextUrl;
       'utils.icon-url': UtilsIconUrl;
+      'utils.id': UtilsId;
       'utils.img-url': UtilsImgUrl;
       'utils.img': UtilsImg;
     }
